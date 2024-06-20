@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "502071be-8300-421e-bc18-b623e4260632",
+		"name": "Taxpayer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31204316"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/taxcal/taxpayers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\":\"srikanth\",\n    \"lastName\":\"vasadi\",\n    \"email\":\"vasadisrikanth08@gmail.com\",\n    \"phoneNumber\":[\"+918790262724\" ,\"+9030155398\"],\n    \"doj\":\"2022-08-14\",\n    \"sal\": \"150000\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/taxcal/taxpayers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"taxcal",
+						"taxpayers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/taxcal/taxpayers Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\":\"vasadi\",\n    \"lastName\":\"srikanthv\",\n    \"email\":\"srikanthvasadi01@gmail.com\",\n    \"phoneNumber\":[\"+917887855532\" ,\"+8790262724\"],\n    \"doj\":\"2022-11-14\",\n    \"sal\": \"150000\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/taxcal/taxpayers/2022",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"taxcal",
+						"taxpayers",
+						"2022"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
