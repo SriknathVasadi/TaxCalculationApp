@@ -45,7 +45,7 @@ Loss of pay per day: Salary / 30
 
 Enabled the actuator
 actuator endpoints 
-  access them using the following pattern: http://localhost:8080/actuator/{endpoint}.
+  access them using the following pattern: http://localhost:9090/actuator/{endpoint}.
   Here are some commonly used Actuator endpoints:
   /actuator/health: Provides information about the health of your application.
   /actuator/info: Returns general information about your application.
